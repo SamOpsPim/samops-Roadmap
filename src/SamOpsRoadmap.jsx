@@ -340,6 +340,211 @@ const FUNDING = [
   { event:"Series A / bridge",  when:"Year 3",     amount:"$500k–$1.5M", detail:"Partech Africa, YC alumni, or strategic MENA partner" },
 ];
 
+// ─── Marketing Plan Data ──────────────────────────────────────────────────────
+
+const MARKETING_PLAN = [
+  {
+    category: "Acquisition clients",
+    color: "blue",
+    objectives: [
+      {
+        id: "mkt-a1",
+        objective: "Atteindre un portefeuille de clients actifs payants",
+        kpi: "Nombre de clients actifs",
+        y1: "10–15 clients",
+        y2: "50–60 clients",
+        y3: "100–150 clients",
+        segment: "Startups + PME + GE",
+        action: "Cold outreach LinkedIn, hackathons, démos live, partenariats MSP",
+      },
+      {
+        id: "mkt-a2",
+        objective: "Convertir les utilisateurs gratuits / testers en abonnés payants",
+        kpi: "Taux de conversion free → paid",
+        y1: "15–20%",
+        y2: "20–25%",
+        y3: "25–30%",
+        segment: "Tous segments",
+        action: "Onboarding wizard, séquences email, case studies, suivi hebdomadaire",
+      },
+      {
+        id: "mkt-a3",
+        objective: "Acquérir des clients entreprise (GE) via pilotes signés",
+        kpi: "Contrats pilotes signés",
+        y1: "1–2 GE",
+        y2: "8–10 GE",
+        y3: "18–25 GE",
+        segment: "Grande Entreprise",
+        action: "Pitch deck enterprise, démos personnalisées, certifications sécurité (ISO 27001, SOC 2)",
+      },
+    ],
+  },
+  {
+    category: "Notoriété & réseaux sociaux",
+    color: "pink",
+    objectives: [
+      {
+        id: "mkt-b1",
+        objective: "Établir SamOps comme référence FinOps sur LinkedIn en MENA",
+        kpi: "Followers page LinkedIn",
+        y1: "3 000+",
+        y2: "8 000+",
+        y3: "15 000+",
+        segment: "CTOs, DevOps, DSI",
+        action: "3 posts/semaine, carousels FinOps tips, building in public, témoignages clients",
+      },
+      {
+        id: "mkt-b2",
+        objective: "Développer la newsletter 'FinOps MENA Weekly' en publication de référence",
+        kpi: "Abonnés newsletter LinkedIn",
+        y1: "2 500+",
+        y2: "6 000+",
+        y3: "12 000+",
+        segment: "Tech leaders MENA + EU",
+        action: "Contenu biweekly, guest contributors, promotion croisée webinaires",
+      },
+      {
+        id: "mkt-b3",
+        objective: "Construire une audience YouTube autour du contenu FinOps",
+        kpi: "Abonnés YouTube",
+        y1: "500+",
+        y2: "2 000+",
+        y3: "8 000+",
+        segment: "DevOps engineers, cloud teams",
+        action: "Tutoriels produit, FinOps 101, démos intégrations, replays webinaires",
+      },
+      {
+        id: "mkt-b4",
+        objective: "Développer la présence Twitter/X et crédibilité technique",
+        kpi: "Followers Twitter/X",
+        y1: "1 000+",
+        y2: "3 000+",
+        y3: "8 000+",
+        segment: "DevOps, SRE, Cloud Engineers",
+        action: "Threads FinOps tips, Twitter Spaces, benchmarks cloud coûts hebdo",
+      },
+      {
+        id: "mkt-b5",
+        objective: "Obtenir une couverture médiatique dans la presse tech MENA",
+        kpi: "Articles presse / mentions",
+        y1: "2–3 articles",
+        y2: "6–8 articles",
+        y3: "12+ articles",
+        segment: "Écosystème startup MENA",
+        action: "PR outreach Wamda, TechCrunch Africa, ArabNet, communiqués presse",
+      },
+    ],
+  },
+  {
+    category: "Engagement & rétention",
+    color: "amber",
+    objectives: [
+      {
+        id: "mkt-c1",
+        objective: "Maintenir un haut niveau de satisfaction et rétention client",
+        kpi: "Churn MRR mensuel",
+        y1: "< 5%",
+        y2: "< 4%",
+        y3: "< 3%",
+        segment: "Tous clients actifs",
+        action: "Onboarding structuré, support réactif, feedback calls mensuels",
+      },
+      {
+        id: "mkt-c2",
+        objective: "Obtenir un NPS élevé et des avis vérifiés sur G2 / Capterra",
+        kpi: "NPS + G2 rating",
+        y1: "NPS ≥ 40 · G2 ≥ 4.5",
+        y2: "NPS ≥ 50 · 40+ avis",
+        y3: "NPS ≥ 60 · 100+ avis",
+        segment: "Clients actifs",
+        action: "Demande d'avis post-onboarding, incentive G2, programme ambassadeur",
+      },
+      {
+        id: "mkt-c3",
+        objective: "Activer un programme de référencement client (referral)",
+        kpi: "% nouveaux clients via referral",
+        y1: "10–15%",
+        y2: "20–25%",
+        y3: "25–30%",
+        segment: "Clients satisfaits",
+        action: "1 mois gratuit par referral, suivi Lemon Squeezy, communication mensuelle",
+      },
+    ],
+  },
+  {
+    category: "Hackathons & événements",
+    color: "emerald",
+    objectives: [
+      {
+        id: "mkt-d1",
+        objective: "Participer à des hackathons pour gagner en visibilité produit",
+        kpi: "Hackathons participés / an",
+        y1: "3–4",
+        y2: "5–6",
+        y3: "8+",
+        segment: "Communauté tech MENA + EU",
+        action: "Hack Tunisia, Orange Digital Center, AWS Build On, Junction, Flat6Labs Demo Day",
+      },
+      {
+        id: "mkt-d2",
+        objective: "Obtenir des speaking slots dans les conférences cloud & FinOps",
+        kpi: "Speaking slots obtenus",
+        y1: "1–2",
+        y2: "4–5",
+        y3: "8+",
+        segment: "CIOs, CTOs, Cloud Teams",
+        action: "GITEX Africa, Tunisia Startup Summit, AWS Summit Paris, GITEX Global Dubai",
+      },
+      {
+        id: "mkt-d3",
+        objective: "Sponsoriser / co-organiser un hackathon autour de l'API SamOps",
+        kpi: "Hackathons sponsorisés",
+        y1: "0–1",
+        y2: "1–2",
+        y3: "2–3",
+        segment: "Développeurs, étudiants tech",
+        action: "DevFest Tunisia, GDG Tunis, AWS Community Day — SamOps API comme outil officiel",
+      },
+      {
+        id: "mkt-d4",
+        objective: "Publier le rapport annuel 'State of FinOps in MENA'",
+        kpi: "Téléchargements rapport",
+        y1: "—",
+        y2: "500+",
+        y3: "2 000+",
+        segment: "DSI, VCs, presse tech",
+        action: "Recherche primaire clients + enquêtes, distribution LinkedIn + email + presse",
+      },
+    ],
+  },
+  {
+    category: "Partenariats & distribution",
+    color: "brand",
+    objectives: [
+      {
+        id: "mkt-e1",
+        objective: "Signer des accords de revente avec des partenaires MSP",
+        kpi: "Partenaires MSP actifs",
+        y1: "2–3",
+        y2: "5+",
+        y3: "10+",
+        segment: "MSPs TN + MA + FR",
+        action: "Co-sell agreements, formation partenaires, portail revendeur, commissions",
+      },
+      {
+        id: "mkt-e2",
+        objective: "Être référencé sur AWS Marketplace et Azure Marketplace",
+        kpi: "Listings marketplaces actifs",
+        y1: "—",
+        y2: "AWS Marketplace",
+        y3: "AWS + Azure",
+        segment: "Clients cloud entreprise",
+        action: "AWS ISV program, Azure Marketplace onboarding, optimisation fiche produit",
+      },
+    ],
+  },
+];
+
 // ─── Collaborative State ──────────────────────────────────────────────────────
 
 const STORAGE_KEY = "samops_roadmap_v3";
@@ -780,6 +985,168 @@ function ChartTooltip({ active, payload, label }) {
   );
 }
 
+// ─── Marketing Plan Tab ───────────────────────────────────────────────────────
+
+const CAT_COLORS = {
+  blue:    { badge: "bg-blue-500/10 text-blue-700 dark:text-blue-300 border-blue-500/20",    dot: "bg-blue-500"    },
+  pink:    { badge: "bg-pink-500/10 text-pink-700 dark:text-pink-300 border-pink-500/20",    dot: "bg-pink-500"    },
+  amber:   { badge: "bg-amber-500/10 text-amber-700 dark:text-amber-300 border-amber-500/20", dot: "bg-amber-500"  },
+  emerald: { badge: "bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border-emerald-500/20", dot: "bg-emerald-500" },
+  brand:   { badge: "bg-brand/10 text-brand border-brand/20", dot: "bg-brand" },
+};
+
+function MarketingPlanTab() {
+  const [openCat, setOpenCat] = useState(null);
+
+  return (
+    <div className="space-y-5">
+      {/* Header */}
+      <div className="card-shadow rounded-xl bg-white dark:bg-[#14161c] p-4 border-l-2 border-brand">
+        <h3 className="text-sm font-bold text-zinc-900 dark:text-zinc-100 mb-1">
+          3. Objectifs Marketing — SamOps
+        </h3>
+        <p className="text-[11px] text-zinc-500 dark:text-[#a0aec0] leading-relaxed">
+          Plan structuré sur 3 ans · 5 axes stratégiques · KPIs mesurables par année
+        </p>
+      </div>
+
+      {/* Legend */}
+      <div className="flex flex-wrap gap-2 text-[10px]">
+        {["Year 1", "Year 2", "Year 3"].map((y, i) => (
+          <span key={y} className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 border font-medium ${
+            i === 0 ? "bg-brand/10 text-brand border-brand/25" :
+            i === 1 ? "bg-blue-500/10 text-blue-700 dark:text-blue-300 border-blue-500/20" :
+                      "bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border-emerald-500/20"
+          }`}>
+            <span className={`w-1.5 h-1.5 rounded-full ${i===0?"bg-brand":i===1?"bg-blue-500":"bg-emerald-500"}`} />
+            {y}
+          </span>
+        ))}
+        <span className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 border font-medium bg-zinc-100 dark:bg-white/[0.04] text-zinc-500 border-zinc-200 dark:border-white/[0.08]">
+          <span className="w-1.5 h-1.5 rounded-full bg-zinc-400" />KPI · Segment · Action
+        </span>
+      </div>
+
+      {/* Categories */}
+      {MARKETING_PLAN.map((cat, ci) => {
+        const colors = CAT_COLORS[cat.color] ?? CAT_COLORS.brand;
+        const isOpen = openCat === ci;
+        return (
+          <div key={cat.category} className="card-shadow rounded-xl bg-white dark:bg-[#14161c] overflow-hidden">
+            {/* Category header */}
+            <button
+              onClick={() => setOpenCat(isOpen ? null : ci)}
+              className="flex w-full items-center gap-3 px-4 py-3 hover:bg-zinc-50 dark:hover:bg-white/[0.02] transition-colors text-left"
+            >
+              <span className={`w-2 h-2 rounded-full shrink-0 ${colors.dot}`} />
+              <span className="flex-1 text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wide">
+                {cat.category}
+              </span>
+              <span className={`text-[10px] font-medium rounded-full px-2 py-0.5 border ${colors.badge}`}>
+                {cat.objectives.length} objectifs
+              </span>
+              {isOpen
+                ? <ChevronDown size={14} className="text-zinc-400 shrink-0" />
+                : <ChevronRight size={14} className="text-zinc-400 shrink-0" />}
+            </button>
+
+            {/* Objectives table */}
+            {isOpen && (
+              <div className="border-t border-zinc-100 dark:border-white/[0.04]">
+                {/* Table header */}
+                <div className="hidden sm:grid grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-0 border-b border-zinc-100 dark:border-white/[0.04] bg-zinc-50 dark:bg-white/[0.02] px-4 py-2 text-[10px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+                  <span>Objectif / KPI</span>
+                  <span className="text-center">Year 1</span>
+                  <span className="text-center">Year 2</span>
+                  <span className="text-center">Year 3</span>
+                  <span>Action clé</span>
+                </div>
+
+                {/* Rows */}
+                <div className="divide-y divide-zinc-100 dark:divide-white/[0.04]">
+                  {cat.objectives.map((obj, oi) => (
+                    <div key={obj.id} className="px-4 py-3 hover:bg-zinc-50 dark:hover:bg-white/[0.02] transition-colors">
+                      {/* Mobile layout */}
+                      <div className="sm:hidden space-y-2">
+                        <div className="flex items-start gap-2">
+                          <span className={`mt-0.5 w-1.5 h-1.5 rounded-full shrink-0 ${colors.dot}`} />
+                          <p className="text-xs font-semibold text-zinc-800 dark:text-zinc-200 leading-relaxed">
+                            {obj.objective}
+                          </p>
+                        </div>
+                        <p className="text-[10px] text-zinc-400 dark:text-zinc-500 pl-3.5">KPI : {obj.kpi}</p>
+                        <div className="flex gap-2 flex-wrap pl-3.5">
+                          <span className="text-[10px] rounded px-2 py-0.5 bg-brand/10 text-brand font-mono font-bold">{obj.y1}</span>
+                          <span className="text-[10px] rounded px-2 py-0.5 bg-blue-500/10 text-blue-700 dark:text-blue-300 font-mono font-bold">{obj.y2}</span>
+                          <span className="text-[10px] rounded px-2 py-0.5 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 font-mono font-bold">{obj.y3}</span>
+                        </div>
+                        <p className="text-[10px] text-zinc-500 dark:text-zinc-400 pl-3.5 italic">{obj.action}</p>
+                      </div>
+
+                      {/* Desktop layout */}
+                      <div className="hidden sm:grid grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-3 items-start">
+                        <div className="space-y-1">
+                          <div className="flex items-start gap-2">
+                            <span className={`mt-1 w-1.5 h-1.5 rounded-full shrink-0 ${colors.dot}`} />
+                            <p className="text-xs font-semibold text-zinc-800 dark:text-zinc-200 leading-relaxed">{obj.objective}</p>
+                          </div>
+                          <p className="text-[10px] text-zinc-400 dark:text-zinc-500 pl-3.5">
+                            KPI : <span className="font-medium text-zinc-500 dark:text-zinc-400">{obj.kpi}</span>
+                          </p>
+                          <p className="text-[10px] pl-3.5">
+                            <span className={`rounded-full px-1.5 py-0.5 border text-[9px] font-medium ${colors.badge}`}>{obj.segment}</span>
+                          </p>
+                        </div>
+                        <div className="text-center pt-0.5">
+                          <span className="text-[11px] font-bold font-mono text-brand">{obj.y1}</span>
+                        </div>
+                        <div className="text-center pt-0.5">
+                          <span className="text-[11px] font-bold font-mono text-blue-600 dark:text-blue-400">{obj.y2}</span>
+                        </div>
+                        <div className="text-center pt-0.5">
+                          <span className="text-[11px] font-bold font-mono text-emerald-600 dark:text-emerald-400">{obj.y3}</span>
+                        </div>
+                        <div className="pt-0.5">
+                          <p className="text-[10px] text-zinc-500 dark:text-zinc-400 leading-relaxed italic">{obj.action}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      })}
+
+      {/* Summary totals */}
+      <div className="card-shadow rounded-xl bg-white dark:bg-[#14161c] p-4">
+        <p className="flex items-center gap-1.5 text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 mb-3">
+          <TrendingUp size={12} className="text-brand" />Récapitulatif des objectifs clés
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          {[
+            { label: "Clients actifs — Year 1",       value: "10–15",       color: "text-brand" },
+            { label: "Clients actifs — Year 2",       value: "50–60",       color: "text-blue-600 dark:text-blue-400" },
+            { label: "Clients actifs — Year 3",       value: "100–150",     color: "text-emerald-600 dark:text-emerald-400" },
+            { label: "LinkedIn followers — Year 3",   value: "15 000+",     color: "text-brand" },
+            { label: "Newsletter abonnés — Year 3",   value: "12 000+",     color: "text-pink-600 dark:text-pink-400" },
+            { label: "Hackathons participés — 3 ans", value: "16–18",       color: "text-amber-600 dark:text-amber-400" },
+            { label: "NPS cible — Year 3",            value: "≥ 60",        color: "text-emerald-600 dark:text-emerald-400" },
+            { label: "G2 reviews — Year 3",           value: "100+",        color: "text-brand" },
+            { label: "Partenaires MSP — Year 3",      value: "10+",         color: "text-blue-600 dark:text-blue-400" },
+          ].map(t => (
+            <div key={t.label} className="rounded-lg bg-zinc-50 dark:bg-white/[0.03] border border-zinc-100 dark:border-white/[0.04] py-3 px-3 text-center">
+              <p className={`text-sm font-bold font-mono ${t.color}`}>{t.value}</p>
+              <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5 leading-tight">{t.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ─── Financial Tab ────────────────────────────────────────────────────────────
 
 function FinancialTab() {
@@ -896,12 +1263,13 @@ function FinancialTab() {
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 const TABS = [
-  { id:"sprint", label:"0–3 Months" },
-  { id:"growth", label:"4–6 Months" },
-  { id:"year1",  label:"Year 1" },
-  { id:"year2",  label:"Year 2" },
-  { id:"year3",  label:"Year 3" },
-  { id:"budget", label:"Finances" },
+  { id:"sprint",    label:"0–3 Months" },
+  { id:"growth",    label:"4–6 Months" },
+  { id:"year1",     label:"Year 1" },
+  { id:"year2",     label:"Year 2" },
+  { id:"year3",     label:"Year 3" },
+  { id:"marketing", label:"Marketing" },
+  { id:"budget",    label:"Finances" },
 ];
 
 export default function SamOpsRoadmap() {
@@ -1088,6 +1456,16 @@ export default function SamOpsRoadmap() {
                 <span style={{ color:"#d46a3a" }} className="font-medium">$40k–$60k MRR · 100–150 clients</span>.
               </p>
               <MilestoneList data={Y3} state={state} onToggle={toggleTask} />
+            </div>
+          )}
+
+          {activeTab === "marketing" && (
+            <div>
+              <p className="text-[11px] text-zinc-500 dark:text-[#a0aec0] mb-5 leading-relaxed">
+                Plan marketing structuré sur 3 ans — 5 axes stratégiques avec KPIs mesurables.
+                Cliquez sur chaque catégorie pour voir les objectifs détaillés.
+              </p>
+              <MarketingPlanTab />
             </div>
           )}
 
