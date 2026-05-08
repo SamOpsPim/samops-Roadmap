@@ -24,7 +24,7 @@ const SPRINT = [
       { id: "s1-t4", text: "Deploy Next.js on Vercel — configure app.samops.io + api.samops.io", cat: "Technical" },
       { id: "s1-t5", text: "Set up CI/CD GitHub Actions pipeline: test → build → deploy", cat: "Technical" },
       { id: "s1-b1", text: "Register auto-entrepreneur at RNE (Registre National des Entreprises, Tunisia)", cat: "Business" },
-      { id: "s1-b2", text: "Create Lemon Squeezy store — Free + Pro tiers ($0 / $49 / $99/mo)", cat: "Business" },
+      { id: "s1-b2", text: "Set up Lemon Squeezy payment and subscription integration", cat: "Business" },
       { id: "s1-m1", text: "Build samops.io landing page (hero, pricing, screenshots, single CTA)", cat: "Marketing" },
       { id: "s1-m2", text: "Post LinkedIn launch announcement with product screenshots", cat: "Marketing" },
     ],
@@ -58,13 +58,13 @@ const SPRINT = [
   },
   {
     id: "s3", period: "Month 3", title: "First Revenue", icon: Send,
-    summary: "Convert 1-2 testers to paying customers. Open signups. Realistic MRR target: $60-160.",
+    summary: "Convert early testers into first active clients. Open public signups. Begin establishing first recurring revenue.",
     tasks: [
       { id: "s3-t1", text: "Fix top 3 UX / bug issues identified in feedback sessions", cat: "Technical" },
       { id: "s3-t2", text: "Full mobile responsive audit across all dashboard views", cat: "Technical" },
       { id: "s3-t3", text: "Integrate Slack alert notifications for cost anomalies", cat: "Technical" },
       { id: "s3-t4", text: "Wire budget threshold alerts to notification pipeline", cat: "Technical" },
-      { id: "s3-b1", text: "Convert 1-2 testers to first paid plan ($30–80/mo — Tunisia market pricing)", cat: "Business" },
+      { id: "s3-b1", text: "Convert early testers into first active clients", cat: "Business" },
       { id: "s3-b2", text: "Attend El Gazala Technopark event or BIAT Innovation Lab demo day", cat: "Business" },
       { id: "s3-b3", text: "Follow up on incubator applications, prepare for interviews if shortlisted", cat: "Business" },
       { id: "s3-m1", text: "Write first anonymous case study (Tunisian startup, cloud cost reduction result)", cat: "Marketing" },
@@ -72,9 +72,9 @@ const SPRINT = [
       { id: "s3-m3", text: "Submit to BetaList, Startup Stash, and Launching Next directories", cat: "Marketing" },
     ],
     targets: [
-      { label: "Paying customers", value: "1–2" },
-      { label: "MRR",              value: "$60–$160" },
-      { label: "Active users",     value: "8–12" },
+      { label: "First clients",  value: "1–2" },
+      { label: "Active users",   value: "8–12" },
+      { label: "Open signups",   value: "Live" },
     ],
   },
 ];
@@ -89,7 +89,7 @@ const GROWTH = [
       { id: "g1-t3", text: "Improve anomaly detection — reduce false positive rate by 40%+", cat: "Technical" },
       { id: "g1-t4", text: "Write API v1 documentation (endpoints, auth, rate limits, examples)", cat: "Technical" },
       { id: "g1-b1", text: "Submit full incubator dossier if shortlisted by B@Labs or Flat6Labs Tunis", cat: "Business" },
-      { id: "g1-b2", text: "Apply to AWS Activate Founders program ($5k cloud credits)", cat: "Business" },
+      { id: "g1-b2", text: "Apply to AWS Activate Founders + Microsoft for Startups (Azure) programs", cat: "Business" },
       { id: "g1-b3", text: "Cold outreach to 30 Tunisian tech companies via LinkedIn (target CTOs, DevOps)", cat: "Business" },
       { id: "g1-m1", text: "Create G2 and Capterra profiles — collect first 3 verified reviews", cat: "Marketing" },
       { id: "g1-m2", text: "Maintain 2-3 LinkedIn posts per week (FinOps tips + product updates)", cat: "Marketing" },
@@ -97,8 +97,8 @@ const GROWTH = [
     ],
     targets: [
       { label: "Incubator",  value: "Accepted" },
-      { label: "Customers",  value: "5–8" },
-      { label: "MRR",        value: "$300–$700" },
+      { label: "Customers",  value: "3–6" },
+      { label: "MRR",        value: "$200–$500" },
     ],
   },
   {
@@ -118,8 +118,8 @@ const GROWTH = [
     ],
     targets: [
       { label: "Pilot signed", value: "1" },
-      { label: "MRR",          value: "$700–$1,500" },
-      { label: "Customers",    value: "8–15" },
+      { label: "MRR",          value: "$500–$1,000" },
+      { label: "Customers",    value: "5–10" },
     ],
   },
   {
@@ -138,8 +138,8 @@ const GROWTH = [
       { id: "g3-m3", text: "Launch referral program: 1 free month per successful paying referral", cat: "Marketing" },
     ],
     targets: [
-      { label: "Customers",         value: "12–20" },
-      { label: "MRR",               value: "$1,200–$2,500" },
+      { label: "Customers",         value: "8–15" },
+      { label: "MRR",               value: "$800–$1,500" },
       { label: "Investor meetings", value: "5+" },
     ],
   },
@@ -154,8 +154,8 @@ const Y1 = {
     { id:"y1-5",  icon:Zap,        text:"AI FinOps co-pilot: natural language cost queries + auto-recommendations", cat:"Technical" },
     { id:"y1-6",  icon:Building,   text:"First enterprise pilot: 1-2 Tunisian companies with 50+ employees", cat:"Business" },
     { id:"y1-7",  icon:DollarSign, text:"Pre-seed closed: $30k–$100k (BFPME + incubator grant + Tunisian angels)", cat:"Business" },
-    { id:"y1-8",  icon:Users,      text:"Team: 3-4 people — 1 full-time hire (sales, CS, or frontend dev)", cat:"Business" },
-    { id:"y1-9",  icon:Award,      text:"AWS Activate Advanced or ISV Partner program activated", cat:"Business" },
+    { id:"y1-8",  icon:Users,      text:"Core team of 5 — capacity focused on product-market fit and early client success", cat:"Business" },
+    { id:"y1-9",  icon:Award,      text:"AWS Activate Advanced + Microsoft for Startups (Azure) partner programs activated", cat:"Business" },
     { id:"y1-10", icon:MapPin,     text:"First 2-3 Moroccan customers (Casablanca tech startups)", cat:"Business" },
     { id:"y1-11", icon:Megaphone,  text:"Speaking slot or booth at GITEX Africa or Tunisia Startup Summit", cat:"Marketing" },
     { id:"y1-12", icon:BarChart2,  text:"FinOps MENA blog: 1,000+ monthly organic readers", cat:"Marketing" },
@@ -163,9 +163,9 @@ const Y1 = {
     { id:"y1-14", icon:TrendingUp, text:"G2 rating ≥ 4.5 stars with 20+ verified reviews", cat:"Marketing" },
   ],
   targets: [
-    { label:"MRR (end Y1)", value:"$5k–$10k" }, { label:"Customers",  value:"20–40" },
-    { label:"Team",          value:"3–4 people" }, { label:"Funding",  value:"$30k–$100k" },
-    { label:"Markets",       value:"TN + MA" },    { label:"Compliance",value:"SOC 2 Type I" },
+    { label:"MRR (end Y1)", value:"$3k–$5k" },    { label:"Customers",  value:"10–15" },
+    { label:"Team",          value:"5 people" },   { label:"Funding",    value:"$30k–$100k" },
+    { label:"Markets",       value:"TN + MA" },    { label:"Compliance", value:"SOC 2 Type I" },
   ],
 };
 
@@ -176,18 +176,19 @@ const Y2 = {
     { id:"y2-3",  icon:Zap,       text:"FinOps automation: auto-rightsizing + reserved instance optimizer", cat:"Technical" },
     { id:"y2-4",  icon:Globe,     text:"Azure connector + multi-region data residency (EU + MENA)", cat:"Technical" },
     { id:"y2-5",  icon:Sparkles,  text:"AI spend forecasting V2: predictive alerts + budget runway", cat:"Technical" },
-    { id:"y2-6",  icon:DollarSign,text:"Seed round: $150k–$400k (regional VC or co-investing angels)", cat:"Business" },
-    { id:"y2-7",  icon:Users,     text:"Team grows to 6-8 (2 engineers + sales + customer success)", cat:"Business" },
-    { id:"y2-8",  icon:MapPin,    text:"France market entry: 5-10 French SMB tech companies as customers", cat:"Business" },
-    { id:"y2-9",  icon:Globe,     text:"MENA expansion: Morocco + Egypt as primary growth markets", cat:"Business" },
-    { id:"y2-10", icon:Handshake, text:"5+ active channel partners (MSPs + cloud resellers across MENA)", cat:"Business" },
-    { id:"y2-11", icon:Building,  text:"AWS Marketplace listing live and generating inbound leads", cat:"Business" },
-    { id:"y2-12", icon:Megaphone, text:"Media coverage: Wamda, TechCrunch Africa, or ArabNet", cat:"Marketing" },
-    { id:"y2-13", icon:Award,     text:"Conference presence: GITEX Global Dubai or AWS Summit Paris", cat:"Marketing" },
+    { id:"y2-6",  icon:Shield,     text:"ISO 27001 certification process initiated — information security management framework in place", cat:"Technical" },
+    { id:"y2-7",  icon:DollarSign,text:"Seed round: $150k–$400k (regional VC or co-investing angels)", cat:"Business" },
+    { id:"y2-8x", icon:Users,     text:"Team grows to 6-8 — first dedicated sales and customer success hires", cat:"Business" },
+    { id:"y2-9x", icon:MapPin,    text:"France market entry: 5-10 French SMB tech companies as first customers", cat:"Business" },
+    { id:"y2-10x",icon:Globe,     text:"MENA expansion: Morocco + Egypt as primary growth markets", cat:"Business" },
+    { id:"y2-11x",icon:Handshake, text:"5+ active channel partners (MSPs + cloud resellers across MENA)", cat:"Business" },
+    { id:"y2-12x",icon:Building,  text:"AWS Marketplace listing live and generating inbound leads", cat:"Business" },
+    { id:"y2-13x",icon:Megaphone, text:"Media coverage: Wamda, TechCrunch Africa, or ArabNet", cat:"Marketing" },
+    { id:"y2-14x",icon:Award,     text:"Conference presence: GITEX Global Dubai or AWS Summit Paris", cat:"Marketing" },
   ],
   targets: [
-    { label:"MRR (end Y2)", value:"$18k–$35k" }, { label:"Customers",  value:"60–100" },
-    { label:"Team",          value:"6–8 people" }, { label:"Funding",  value:"$150k–$400k" },
+    { label:"MRR (end Y2)", value:"$12k–$22k" }, { label:"Customers",  value:"50–60" },
+    { label:"Team",          value:"6–8 people" }, { label:"Funding",   value:"$150k–$400k" },
     { label:"Markets",       value:"TN+MA+FR+EG" }, { label:"Partners", value:"5+ MSPs" },
   ],
 };
@@ -197,7 +198,7 @@ const Y3 = {
     { id:"y3-1",  icon:Sparkles,  text:"AI-native FinOps: autonomous cost optimization with human-in-the-loop guardrails", cat:"Technical" },
     { id:"y3-2",  icon:Code,      text:"Developer SDK + Terraform provider + Pulumi plugin published", cat:"Technical" },
     { id:"y3-3",  icon:Globe,     text:"Multi-cloud + on-prem hybrid FinOps (VMware, OpenStack connectors)", cat:"Technical" },
-    { id:"y3-4",  icon:Shield,    text:"GDPR + ISO 27001 compliance framework completed", cat:"Technical" },
+    { id:"y3-4",  icon:Shield,    text:"ISO 27001 (information security) + ISO 9001 (quality management) certifications completed — GDPR compliance framework fully operational", cat:"Technical" },
     { id:"y3-5",  icon:Layers,    text:"Integration marketplace with community-built connectors", cat:"Technical" },
     { id:"y3-6",  icon:DollarSign,text:"Series A or large seed: $500k–$1.5M (Partech Africa, YC, or strategic partner)", cat:"Business" },
     { id:"y3-7",  icon:Users,     text:"Team: 12–18 people across TN, FR, and remote MENA", cat:"Business" },
@@ -209,26 +210,26 @@ const Y3 = {
     { id:"y3-13", icon:TrendingUp, text:"FinOps Foundation Certified Platform Partner status achieved", cat:"Marketing" },
   ],
   targets: [
-    { label:"MRR (end Y3)", value:"$50k–$80k" }, { label:"Customers",  value:"150–250" },
+    { label:"MRR (end Y3)", value:"$40k–$60k" }, { label:"Customers",  value:"100–150" },
     { label:"Team",          value:"12–18 people" }, { label:"Funding", value:"$500k–$1.5M" },
-    { label:"Markets",       value:"MENA + EU" },   { label:"ARR",      value:"$600k–$1M" },
+    { label:"Markets",       value:"MENA + EU" },   { label:"ARR",      value:"$480k–$720k" },
   ],
 };
 
 const REVENUE_CHART = [
   { n:"M1",    cost:50,   rev:0,      label:"Month 1"    },
   { n:"M2",    cost:50,   rev:0,      label:"Month 2"    },
-  { n:"M3",    cost:50,   rev:100,    label:"Month 3"    },
-  { n:"M4",    cost:120,  rev:450,    label:"Month 4"    },
-  { n:"M5",    cost:120,  rev:1100,   label:"Month 5"    },
-  { n:"M6",    cost:150,  rev:1900,   label:"Month 6"    },
-  { n:"Q3 Y1", cost:200,  rev:4000,   label:"Q3 Year 1"  },
-  { n:"Q4 Y1", cost:250,  rev:7500,   label:"Q4 Year 1"  },
-  { n:"Q1 Y2", cost:350,  rev:11000,  label:"Q1 Year 2"  },
-  { n:"Q2 Y2", cost:450,  rev:18000,  label:"Q2 Year 2"  },
-  { n:"Q4 Y2", cost:650,  rev:35000,  label:"Q4 Year 2"  },
-  { n:"Q2 Y3", cost:1200, rev:55000,  label:"Q2 Year 3"  },
-  { n:"Q4 Y3", cost:2000, rev:80000,  label:"Q4 Year 3"  },
+  { n:"M3",    cost:50,   rev:80,     label:"Month 3"    },
+  { n:"M4",    cost:120,  rev:300,    label:"Month 4"    },
+  { n:"M5",    cost:120,  rev:600,    label:"Month 5"    },
+  { n:"M6",    cost:150,  rev:1200,   label:"Month 6"    },
+  { n:"Q3 Y1", cost:200,  rev:2500,   label:"Q3 Year 1"  },
+  { n:"Q4 Y1", cost:250,  rev:4000,   label:"Q4 Year 1"  },
+  { n:"Q1 Y2", cost:350,  rev:7000,   label:"Q1 Year 2"  },
+  { n:"Q2 Y2", cost:450,  rev:12000,  label:"Q2 Year 2"  },
+  { n:"Q4 Y2", cost:600,  rev:20000,  label:"Q4 Year 2"  },
+  { n:"Q2 Y3", cost:900,  rev:38000,  label:"Q2 Year 3"  },
+  { n:"Q4 Y3", cost:1500, rev:58000,  label:"Q4 Year 3"  },
 ];
 
 const COST_BREAKDOWN = [
@@ -707,10 +708,10 @@ function FinancialTab() {
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-        <StatCard icon={DollarSign} label="Bootstrap cost"  value="$50/mo"      sub="Months 1–3"         color="bg-brand/10 text-brand" />
-        <StatCard icon={TrendingUp} label="Target M6 MRR"   value="$1.9k"       sub="12-20 customers"    color="bg-emerald-500/10 text-emerald-600 dark:text-emerald-400" />
+        <StatCard icon={DollarSign} label="Bootstrap cost"   value="$50/mo"      sub="Months 1–3"        color="bg-brand/10 text-brand" />
+        <StatCard icon={TrendingUp} label="Target M6 MRR"   value="$1.2k"       sub="8-15 customers"    color="bg-emerald-500/10 text-emerald-600 dark:text-emerald-400" />
         <StatCard icon={Award}      label="Pre-seed target"  value="$30k–$100k" sub="Month 9-15"         color="bg-amber-500/10 text-amber-600 dark:text-amber-400" />
-        <StatCard icon={Rocket}     label="Year 3 ARR target" value="$600k–$1M" sub="Realistic upside"   color="bg-blue-500/10 text-blue-600 dark:text-blue-400" />
+        <StatCard icon={Rocket}     label="Year 3 ARR target" value="$480k–$720k" sub="Progressive upside" color="bg-blue-500/10 text-blue-600 dark:text-blue-400" />
       </div>
 
       <div className="card-shadow rounded-xl bg-white dark:bg-[#14161c] p-4 sm:p-6">
@@ -793,11 +794,11 @@ function FinancialTab() {
         </h4>
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-0">
           {[
-            { period:"Month 3",  mrr:"$100",  desc:"1-2 customers" },
-            { period:"Month 6",  mrr:"$1.9k", desc:"12-20 customers" },
-            { period:"Year 1",   mrr:"$7.5k", desc:"20-40 customers" },
-            { period:"Year 2",   mrr:"$35k",  desc:"60-100 customers" },
-            { period:"Year 3",   mrr:"$80k",  desc:"150-250 customers" },
+            { period:"Month 3",  mrr:"~$100",  desc:"1-2 first clients" },
+            { period:"Month 6",  mrr:"$1.2k",  desc:"8-15 customers" },
+            { period:"Year 1",   mrr:"$4k",    desc:"10-15 customers" },
+            { period:"Year 2",   mrr:"$20k",   desc:"50-60 customers" },
+            { period:"Year 3",   mrr:"$58k",   desc:"100-150 customers" },
           ].map((t,i) => (
             <React.Fragment key={t.period}>
               <div className="flex-1 text-center py-1">
@@ -922,7 +923,7 @@ export default function SamOpsRoadmap() {
               <span className="gradient-text">3-Year Roadmap</span>
             </h1>
             <p className="text-sm text-zinc-600 dark:text-[#a0aec0]">
-              Tunisia-based · Student founders · FinOps / Cloud Cost Optimization · Realistic growth
+              Tunisia-based · Team of 5 · FinOps / Cloud Cost Optimization · Realistic B2B SaaS growth
             </p>
 
             {/* Context banner */}
@@ -930,9 +931,9 @@ export default function SamOpsRoadmap() {
               style={{ backgroundColor:"rgba(212,106,58,0.05)", border:"1px solid rgba(212,106,58,0.15)" }}>
               <span style={{ color:"#d46a3a" }} className="shrink-0 mt-0.5">ⓘ</span>
               <span className="text-zinc-600 dark:text-[#a0aec0]">
-                We are students finishing our academic project and transitioning into a startup.
-                Development is largely complete. This roadmap covers the entrepreneurship phase —
-                sized realistically for Tunisia.{" "}
+                We are a team of 5 building a B2B SaaS FinOps platform from Tunisia.
+                The core product is built. This roadmap covers our go-to-market and growth execution —
+                scoped realistically for an early-stage startup team.{" "}
                 <strong className="text-zinc-800 dark:text-zinc-300">Click any task to mark it done.</strong>{" "}
                 Use the avatar (top-right) to switch team members.
               </span>
@@ -983,8 +984,8 @@ export default function SamOpsRoadmap() {
             <div>
               <p className="text-[11px] text-zinc-500 dark:text-[#a0aec0] mb-5 leading-relaxed">
                 Pre-seed deployed. SOC 2 Type I complete. First enterprise pilots in Tunisia.
-                Team of 3-4. Morocco market entry. Target:{" "}
-                <span style={{ color:"#d46a3a" }} className="font-medium">$5k–$10k MRR</span>.
+                Team of 5. Morocco market entry. Target:{" "}
+                <span style={{ color:"#d46a3a" }} className="font-medium">$3k–$5k MRR · ~10–15 clients</span>.
               </p>
               <MilestoneList data={Y1} state={state} onToggle={toggleTask} />
             </div>
@@ -994,8 +995,8 @@ export default function SamOpsRoadmap() {
             <div>
               <p className="text-[11px] text-zinc-500 dark:text-[#a0aec0] mb-5 leading-relaxed">
                 Seed round closed. Team of 6-8. France market entry. White-label for MSPs.
-                AWS Marketplace listed. Target:{" "}
-                <span style={{ color:"#d46a3a" }} className="font-medium">$18k–$35k MRR</span>.
+                AWS Marketplace listed. ISO 27001 process initiated. Target:{" "}
+                <span style={{ color:"#d46a3a" }} className="font-medium">$12k–$22k MRR · ~50–60 clients</span>.
               </p>
               <MilestoneList data={Y2} state={state} onToggle={toggleTask} />
             </div>
@@ -1005,8 +1006,8 @@ export default function SamOpsRoadmap() {
             <div>
               <p className="text-[11px] text-zinc-500 dark:text-[#a0aec0] mb-5 leading-relaxed">
                 Series A targeted. Team of 12-18 across MENA + France. AI-native platform.
-                MENA + EU established. Target:{" "}
-                <span style={{ color:"#d46a3a" }} className="font-medium">$50k–$80k MRR</span>.
+                ISO 27001 + ISO 9001 certified. MENA + EU established. Target:{" "}
+                <span style={{ color:"#d46a3a" }} className="font-medium">$40k–$60k MRR · 100–150 clients</span>.
               </p>
               <MilestoneList data={Y3} state={state} onToggle={toggleTask} />
             </div>
@@ -1017,7 +1018,7 @@ export default function SamOpsRoadmap() {
           {/* Footer */}
           <footer className="mt-14 pt-6 border-t border-zinc-100 dark:border-white/[0.04] text-center space-y-1">
             <p className="text-[10px] text-zinc-400 dark:text-zinc-600">
-              SamOps Roadmap · FinOps SaaS from Tunisia · Academic project → Startup
+              SamOps Roadmap · FinOps SaaS from Tunisia · Team of 5 · B2B SaaS
             </p>
             <p className="text-[10px] text-zinc-300 dark:text-zinc-700">
               Realistic 3-year vision · Small team · Progressive growth
