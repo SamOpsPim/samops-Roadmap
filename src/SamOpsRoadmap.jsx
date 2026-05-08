@@ -90,6 +90,7 @@ const GROWTH = [
       { id: "g1-t4", text: "Write API v1 documentation (endpoints, auth, rate limits, examples)", cat: "Technical" },
       { id: "g1-b1", text: "Submit full incubator dossier if shortlisted by B@Labs or Flat6Labs Tunis", cat: "Business" },
       { id: "g1-b2", text: "Apply to AWS Activate Founders + Microsoft for Startups (Azure) programs", cat: "Business" },
+      { id: "g1-b2b", text: "Confirm Azure for Startups label activation — unlock cloud credits, technical support, and co-sell benefits", cat: "Business" },
       { id: "g1-b3", text: "Cold outreach to 30 Tunisian tech companies via LinkedIn (target CTOs, DevOps)", cat: "Business" },
       { id: "g1-m1", text: "Create G2 and Capterra profiles — collect first 3 verified reviews", cat: "Marketing" },
       { id: "g1-m2", text: "Maintain 2-3 LinkedIn posts per week (FinOps tips + product updates)", cat: "Marketing" },
@@ -108,6 +109,7 @@ const GROWTH = [
       { id: "g2-t1", text: "Add second cloud provider (GCP if AWS-only, or AWS if GCP-only)", cat: "Technical" },
       { id: "g2-t2", text: "Build public API with API key management for integration partners", cat: "Technical" },
       { id: "g2-t3", text: "Start SOC 2 Type I gap analysis — list controls, identify missing ones", cat: "Technical" },
+      { id: "g2-t3b", text: "Begin ISO 27001 readiness assessment — define scope, inventory assets, identify security control gaps", cat: "Technical" },
       { id: "g2-t4", text: "RBAC v2 — fine-grained permissions per cloud account and per team", cat: "Technical" },
       { id: "g2-b1", text: "Sign 1 paid pilot contract with a Tunisian company (3 months, $200–500/mo)", cat: "Business" },
       { id: "g2-b2", text: "Register French micro-entreprise for EU billing (critical for expansion)", cat: "Business" },
@@ -127,6 +129,8 @@ const GROWTH = [
     summary: "Harden the platform, release mobile v1, open first investor conversations.",
     tasks: [
       { id: "g3-t1", text: "Internal security audit — auth flows, data access, API attack surfaces", cat: "Technical" },
+      { id: "g3-t1b", text: "Advance SOC 2 Type I controls implementation — document policies, access controls, encryption standards", cat: "Technical" },
+      { id: "g3-t1c", text: "Implement ISO 27001 core controls: risk treatment plan, incident response procedure, data classification policy", cat: "Technical" },
       { id: "g3-t2", text: "Migrate to k3s Kubernetes on Hetzner (replace Docker Compose in prod)", cat: "Technical" },
       { id: "g3-t3", text: "Release mobile app v1.0 — TestFlight (iOS) + Play Store beta (Android)", cat: "Technical" },
       { id: "g3-t4", text: "Add CSV + Excel data export for all cost reports and anomaly summaries", cat: "Technical" },
@@ -141,6 +145,7 @@ const GROWTH = [
       { label: "Customers",         value: "8–15" },
       { label: "MRR",               value: "$800–$1,500" },
       { label: "Investor meetings", value: "5+" },
+      { label: "Cert. track",       value: "SOC 2 + ISO 27001" },
     ],
   },
 ];
@@ -171,12 +176,14 @@ const Y1 = {
 
 const Y2 = {
   milestones: [
-    { id:"y2-1",  icon:Shield,    text:"SOC 2 Type II audit passed", cat:"Technical" },
+    { id:"y2-1",  icon:Shield,    text:"SOC 2 Type I report issued — shared with enterprise prospects as trust credential", cat:"Technical" },
+    { id:"y2-1b", icon:Shield,    text:"SOC 2 Type II audit initiated — continuous monitoring controls active", cat:"Technical" },
     { id:"y2-2",  icon:Layers,    text:"White-label platform for MSP resellers with custom branding", cat:"Technical" },
     { id:"y2-3",  icon:Zap,       text:"FinOps automation: auto-rightsizing + reserved instance optimizer", cat:"Technical" },
     { id:"y2-4",  icon:Globe,     text:"Azure connector + multi-region data residency (EU + MENA)", cat:"Technical" },
     { id:"y2-5",  icon:Sparkles,  text:"AI spend forecasting V2: predictive alerts + budget runway", cat:"Technical" },
-    { id:"y2-6",  icon:Shield,     text:"ISO 27001 certification process initiated — information security management framework in place", cat:"Technical" },
+    { id:"y2-6",  icon:Shield,     text:"ISO 27001 certification audit completed — information security management system (ISMS) formally certified", cat:"Technical" },
+    { id:"y2-6b", icon:Shield,     text:"CSA STAR Level 1 self-assessment published — cloud security transparency for enterprise clients", cat:"Technical" },
     { id:"y2-7",  icon:DollarSign,text:"Seed round: $150k–$400k (regional VC or co-investing angels)", cat:"Business" },
     { id:"y2-8x", icon:Users,     text:"Team grows to 6-8 — first dedicated sales and customer success hires", cat:"Business" },
     { id:"y2-9x", icon:MapPin,    text:"France market entry: 5-10 French SMB tech companies as first customers", cat:"Business" },
@@ -189,7 +196,7 @@ const Y2 = {
   targets: [
     { label:"MRR (end Y2)", value:"$12k–$22k" }, { label:"Customers",  value:"50–60" },
     { label:"Team",          value:"6–8 people" }, { label:"Funding",   value:"$150k–$400k" },
-    { label:"Markets",       value:"TN+MA+FR+EG" }, { label:"Partners", value:"5+ MSPs" },
+    { label:"Markets",       value:"TN+MA+FR+EG" }, { label:"Compliance",value:"ISO 27001 + SOC 2 I" },
   ],
 };
 
@@ -198,7 +205,9 @@ const Y3 = {
     { id:"y3-1",  icon:Sparkles,  text:"AI-native FinOps: autonomous cost optimization with human-in-the-loop guardrails", cat:"Technical" },
     { id:"y3-2",  icon:Code,      text:"Developer SDK + Terraform provider + Pulumi plugin published", cat:"Technical" },
     { id:"y3-3",  icon:Globe,     text:"Multi-cloud + on-prem hybrid FinOps (VMware, OpenStack connectors)", cat:"Technical" },
-    { id:"y3-4",  icon:Shield,    text:"ISO 27001 (information security) + ISO 9001 (quality management) certifications completed — GDPR compliance framework fully operational", cat:"Technical" },
+    { id:"y3-4",  icon:Shield,    text:"ISO 27001 (information security) + ISO 9001 (quality management) certifications renewed and audited", cat:"Technical" },
+    { id:"y3-4b", icon:Shield,    text:"SOC 2 Type II report renewed — GDPR + PDPA (Tunisia) compliance framework fully operational", cat:"Technical" },
+    { id:"y3-4c", icon:Shield,    text:"CSA STAR Level 2 (third-party audit) achieved — enterprise-grade cloud security posture certified", cat:"Technical" },
     { id:"y3-5",  icon:Layers,    text:"Integration marketplace with community-built connectors", cat:"Technical" },
     { id:"y3-6",  icon:DollarSign,text:"Series A or large seed: $500k–$1.5M (Partech Africa, YC, or strategic partner)", cat:"Business" },
     { id:"y3-7",  icon:Users,     text:"Team: 12–18 people across TN, FR, and remote MENA", cat:"Business" },
@@ -210,9 +219,10 @@ const Y3 = {
     { id:"y3-13", icon:TrendingUp, text:"FinOps Foundation Certified Platform Partner status achieved", cat:"Marketing" },
   ],
   targets: [
-    { label:"MRR (end Y3)", value:"$40k–$60k" }, { label:"Customers",  value:"100–150" },
-    { label:"Team",          value:"12–18 people" }, { label:"Funding", value:"$500k–$1.5M" },
-    { label:"Markets",       value:"MENA + EU" },   { label:"ARR",      value:"$480k–$720k" },
+    { label:"MRR (end Y3)", value:"$40k–$60k" }, { label:"Customers",   value:"100–150" },
+    { label:"Team",          value:"12–18 people" }, { label:"Funding",  value:"$500k–$1.5M" },
+    { label:"Compliance",    value:"ISO 27001 + ISO 9001 + SOC 2 II + CSA STAR" },
+    { label:"Markets",       value:"MENA + EU" },
   ],
 };
 
