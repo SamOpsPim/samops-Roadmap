@@ -51,9 +51,11 @@ const SPRINT = [
       { id: "s2-m3", text: "Record 5-minute Loom product walkthrough video", cat: "Marketing" },
     ],
     targets: [
-      { label: "Beta testers",     value: "3–5" },
-      { label: "Feedback items",   value: "20+" },
-      { label: "Incubator applied", value: "1+" },
+      { label: "Feedback items",      value: "20+" },
+      { label: "Incubator applied",   value: "1+" },
+      { label: "Testers — Startups",  value: "2–3" },
+      { label: "Testers — PME",       value: "1–2" },
+      { label: "Testers — GE",        value: "0" },
     ],
   },
   {
@@ -72,9 +74,11 @@ const SPRINT = [
       { id: "s3-m3", text: "Submit to BetaList, Startup Stash, and Launching Next directories", cat: "Marketing" },
     ],
     targets: [
-      { label: "First clients",  value: "1–2" },
-      { label: "Active users",   value: "8–12" },
-      { label: "Open signups",   value: "Live" },
+      { label: "Active users",        value: "8–12" },
+      { label: "Open signups",        value: "Live" },
+      { label: "Clients — Startups",  value: "1–2" },
+      { label: "Clients — PME",       value: "0–1" },
+      { label: "Clients — GE",        value: "0" },
     ],
   },
 ];
@@ -97,9 +101,11 @@ const GROWTH = [
       { id: "g1-m3", text: "Co-author 'FinOps ROI' article with first paying client (case study)", cat: "Marketing" },
     ],
     targets: [
-      { label: "Incubator",  value: "Accepted" },
-      { label: "Customers",  value: "3–6" },
-      { label: "MRR",        value: "$200–$500" },
+      { label: "Incubator",           value: "Accepted" },
+      { label: "MRR",                 value: "$200–$500" },
+      { label: "Clients — Startups",  value: "2–4" },
+      { label: "Clients — PME",       value: "1–2" },
+      { label: "Clients — GE",        value: "0" },
     ],
   },
   {
@@ -119,9 +125,11 @@ const GROWTH = [
       { id: "g2-m2", text: "Identify 1 Tunisian cloud MSP for co-selling partnership discussion", cat: "Marketing" },
     ],
     targets: [
-      { label: "Pilot signed", value: "1" },
-      { label: "MRR",          value: "$500–$1,000" },
-      { label: "Customers",    value: "5–10" },
+      { label: "Pilot signed",        value: "1" },
+      { label: "MRR",                 value: "$500–$1,000" },
+      { label: "Clients — Startups",  value: "3–5" },
+      { label: "Clients — PME",       value: "2–4" },
+      { label: "Clients — GE",        value: "0–1" },
     ],
   },
   {
@@ -142,10 +150,12 @@ const GROWTH = [
       { id: "g3-m3", text: "Launch referral program: 1 free month per successful paying referral", cat: "Marketing" },
     ],
     targets: [
-      { label: "Customers",         value: "8–15" },
-      { label: "MRR",               value: "$800–$1,500" },
-      { label: "Investor meetings", value: "5+" },
-      { label: "Cert. track",       value: "SOC 2 + ISO 27001" },
+      { label: "MRR",                 value: "$800–$1,500" },
+      { label: "Investor meetings",   value: "5+" },
+      { label: "Cert. track",         value: "SOC 2 + ISO 27001" },
+      { label: "Clients — Startups",  value: "4–7" },
+      { label: "Clients — PME",       value: "3–6" },
+      { label: "Clients — GE",        value: "1–2" },
     ],
   },
 ];
@@ -168,9 +178,15 @@ const Y1 = {
     { id:"y1-14", icon:TrendingUp, text:"G2 rating ≥ 4.5 stars with 20+ verified reviews", cat:"Marketing" },
   ],
   targets: [
-    { label:"MRR (end Y1)", value:"$3k–$5k" },    { label:"Customers",  value:"10–15" },
-    { label:"Team",          value:"5 people" },   { label:"Funding",    value:"$30k–$100k" },
-    { label:"Markets",       value:"TN + MA" },    { label:"Compliance", value:"SOC 2 Type I" },
+    { label:"MRR (end Y1)",         value:"$3k–$5k" },
+    { label:"Team",                  value:"5 people" },
+    { label:"Funding",               value:"$30k–$100k" },
+    { label:"Markets",               value:"TN + MA" },
+    { label:"Compliance",            value:"SOC 2 Type I" },
+    { label:"Clients — Startups",    value:"5–7" },
+    { label:"Clients — PME",         value:"3–5" },
+    { label:"Clients — GE",          value:"1–2" },
+    { label:"Clients — Individuel",  value:"0–1" },
   ],
 };
 
@@ -194,9 +210,15 @@ const Y2 = {
     { id:"y2-14x",icon:Award,     text:"Conference presence: GITEX Global Dubai or AWS Summit Paris", cat:"Marketing" },
   ],
   targets: [
-    { label:"MRR (end Y2)", value:"$12k–$22k" }, { label:"Customers",  value:"50–60" },
-    { label:"Team",          value:"6–8 people" }, { label:"Funding",   value:"$150k–$400k" },
-    { label:"Markets",       value:"TN+MA+FR+EG" }, { label:"Compliance",value:"ISO 27001 + SOC 2 I" },
+    { label:"MRR (end Y2)",         value:"$12k–$22k" },
+    { label:"Team",                  value:"6–8 people" },
+    { label:"Funding",               value:"$150k–$400k" },
+    { label:"Markets",               value:"TN+MA+FR+EG" },
+    { label:"Compliance",            value:"ISO 27001 + SOC 2 I/II" },
+    { label:"Clients — Startups",    value:"12–15" },
+    { label:"Clients — PME",         value:"30–35" },
+    { label:"Clients — GE",          value:"8–10" },
+    { label:"Clients — Individuel",  value:"2–5" },
   ],
 };
 
@@ -219,10 +241,15 @@ const Y3 = {
     { id:"y3-13", icon:TrendingUp, text:"FinOps Foundation Certified Platform Partner status achieved", cat:"Marketing" },
   ],
   targets: [
-    { label:"MRR (end Y3)", value:"$40k–$60k" }, { label:"Customers",   value:"100–150" },
-    { label:"Team",          value:"12–18 people" }, { label:"Funding",  value:"$500k–$1.5M" },
-    { label:"Compliance",    value:"ISO 27001 + ISO 9001 + SOC 2 II + CSA STAR" },
-    { label:"Markets",       value:"MENA + EU" },
+    { label:"MRR (end Y3)",         value:"$40k–$60k" },
+    { label:"Team",                  value:"12–18 people" },
+    { label:"Funding",               value:"$500k–$1.5M" },
+    { label:"Markets",               value:"MENA + EU" },
+    { label:"Compliance",            value:"ISO 27001 + ISO 9001 + SOC 2 II + CSA STAR" },
+    { label:"Clients — Startups",    value:"20–25" },
+    { label:"Clients — PME",         value:"55–70" },
+    { label:"Clients — GE",          value:"18–25" },
+    { label:"Clients — Individuel",  value:"5–10" },
   ],
 };
 
